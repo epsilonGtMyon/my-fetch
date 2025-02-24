@@ -14,7 +14,7 @@ get01Elem.addEventListener("click", async () => {
   const client = useMyFetchClient();
 
   const resp = await client
-    .get("/sandbox01/get01")
+    .get("http://localhost:1111/sandbox01/get01")
     .params({
       value01: "あいうえお",
       value02: "かきくけこ",
